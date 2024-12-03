@@ -18,4 +18,5 @@ Memory Game using HTML. CSS and JavaScript
 בהצלחה
 
 
-![image](https://github.com/user-attachments/assets/60ddf559-97f6-4446-ad40-76512caeca0d)
+![image](https://github.com/user-attachments/assets/723938c5-adb7-47f0-ba6f-5f1c22099c99)
+
