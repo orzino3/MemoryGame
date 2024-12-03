@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="combined.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <h3>תכנות בסביבת האינטרנט</h3>
+
+    <div id="form-group" class="">
+      <form
+        id="game-form"
+        onsubmit="{
+        initInfo(event);
+        handleSubmit();
+        timerStart();
+      }"
+      >
+        <input id="nickname" placeholder="הקלד את שמך" required dir="rtl" />
+        <br />
+        <input
+          id="pairs"
+          type="number"
+          placeholder="בחר את מס' הזוגות הרצוי. בין 1 ל-30"
+          required
+          dir="rtl"
+          min="1"
+          max="30"
+        />
+        <br />
+        <button class="btn btn-primary" id="submit-button" type="submit">
+          התחל
+        </button>
+      </form>
+    </div>
+
+    <div id="game-group" class="hidden">
+      <div id="playerNick"></div>
+      <div id="timeCounter">Time: 0 seconds</div>
+      <div class="parent"><div id="game-container" class="game"></div></div>
+      <br /><br />
+      <div id="replay-game-button">
+        <button class="btn btn-caution" onclick="playAgain()">
+          <span class="reload">&#x21bb;</span> שחק שוב
+        </button>
+      </div>
+      <br /><br />
+      <div id="reset-game-button">
+        <button class="btn btn-danger" onclick="restartGame()">
+          <span class="reload">&#x21bb;</span> לחץ כאן על מנת להתחיל מחדש
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="combined.js"></script>
+  </body>
+</html>

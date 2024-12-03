@@ -1,0 +1,94 @@
+body{
+    font-family: Gisha,Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+input{
+    margin: 10px;
+    width: 300px;
+    border-radius: 30px;
+    border-color: #ccc;
+    padding: 10px;
+}
+
+#timeCounter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+
+.hidden{
+    display: none;
+}
+
+.active{
+    border: 10px solid red;
+}
+
+.parent {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(133px, 1fr));         
+  width: 90%;              
+  max-width: 1650px;       
+}
+
+  .card {
+    height: 199px;
+    width: 133px;
+    cursor: pointer;
+    background-image: url("./cardimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+
+  .front{
+    height: 199px;
+    width: 133px;
+    line-height: 210px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+
+  }
+
+  .back{
+    height: 199px;
+    width: 133px;
+    line-height: 210px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+  }
