@@ -109,6 +109,7 @@ function checkCards() {
     game.score++;
     game.flip.forEach((ele) => {
       ele.found = true;
+      ele.style.boxShadow = "0 0 5px 5px green";
     });
     game.pause = false;
     game.flip.length = 0;
